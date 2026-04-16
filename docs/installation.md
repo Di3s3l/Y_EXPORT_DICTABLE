@@ -12,7 +12,7 @@
 1. Open **SE38** in your SAP system
 2. Create program `Y_EXPORT_DICTABLE`
    - Package: **$TMP** (local, non-transportable — no Basis involvement, no transport request)
-3. Upload source: **Utilities → Upload/Download → Upload** → select `Y_EXPORT_DICTABLE.abap`
+3. Upload source: **Utilities → Upload/Download → Upload** → select `src/Y_EXPORT_DICTABLE.abap`
 4. Activate: **Ctrl+F3**
 5. Maintain text elements: **SE38 → Goto → Text Elements** — see [Text Elements](text-elements.md)
 

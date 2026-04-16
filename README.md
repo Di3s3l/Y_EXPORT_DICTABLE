@@ -32,7 +32,8 @@ SAP ABAP report that exports the field structure of any transparent DDIC table t
 
 | File | Description |
 |------|-------------|
-| `Y_EXPORT_DICTABLE.abap` | ABAP source |
+| `src/Y_EXPORT_DICTABLE.abap` | ABAP source |
+| `src/Text element.md` | Text elements — copy values from here into SE32 |
 | `docs/` | Full documentation |
 
 ---
