@@ -36,6 +36,12 @@ La cartella [`docs/it/`](docs/it/README.md) contiene istruzioni di installazione
 
 ---
 
+## Futuri Sviluppi
+
+Funzionalità pianificate in [`docs/it/TODO.md`](docs/it/TODO.md).
+
+---
+
 ## Licenza e Copyright
 
 Copyright © 2026 <a href="https://enz.ovh" target="_blank">Di3s3l</a>

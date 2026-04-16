@@ -36,6 +36,12 @@ The [`docs/`](docs/README.md) folder contains installation instructions, usage g
 
 ---
 
+## Future Development
+
+Planned features tracked in [`docs/TODO.md`](docs/TODO.md).
+
+---
+
 ## License & Copyright
 
 Copyright © 2026 <a href="https://enz.ovh" target="_blank">Di3s3l</a>
