@@ -34,8 +34,15 @@ SELECTION-SCREEN SKIP.
 " Parameter labels are set in SE32, Selection texts tab.
 SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
   PARAMETERS: p_tab  TYPE tabname   OBLIGATORY,
-              p_file TYPE localfile OBLIGATORY DEFAULT 'C:\TEMP\export.csv'.
+              p_file TYPE localfile OBLIGATORY.
 SELECTION-SCREEN END OF BLOCK b1.
+
+*----------------------------------------------------------------------*
+* Default output path: TEXT-D01 (path) concatenated with TEXT-D02 (filename).
+* Split into two symbols so path and filename can be maintained independently.
+*----------------------------------------------------------------------*
+INITIALIZATION.
+  p_file = TEXT-d01 && TEXT-d02.
 
 *----------------------------------------------------------------------*
 * F4 help for output file path

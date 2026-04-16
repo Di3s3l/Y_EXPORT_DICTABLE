@@ -15,6 +15,8 @@ After uploading the source to a new system, recreate all entries below before ex
 | `001`  | 40      | `Export DDIC Table Structure` |
 | `S01`  | 70      | `Exports the DDIC structure of a table to a semicolon-separated CSV file.` |
 | `S02`  | 70      | `Separator: semicolon (;)   Encoding: UTF-8 with BOM` |
+| `D01`  | 100     | `C:\TEMP\` |
+| `D02`  | 50      | `export.csv` |
 
 ### CSV column headers (one symbol per column)
 
@@ -60,6 +62,8 @@ If a symbol is blank or not maintained, that column header falls back to `NONAME
 | `TEXT-S01` | `SELECTION-SCREEN COMMENT 1(70) TEXT-s01`                    | Info-box line 1          |
 | `TEXT-S02` | `SELECTION-SCREEN COMMENT 1(70) TEXT-s02`                    | Info-box line 2          |
 | `TEXT-H01`–`H07` | CSV header assembly                                   | One label per column     |
+| `TEXT-D01` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02`               | Default output path      |
+| `TEXT-D02` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02`               | Default output filename  |
 | `TEXT-M01` | `MESSAGE TEXT-m01 TYPE 'E'`                                   | Table not found          |
 | `TEXT-M02` | `MESSAGE TEXT-m02 TYPE 'E'`                                   | Field metadata read fail |
 | `TEXT-M03` | `MESSAGE TEXT-m03 TYPE 'W'`                                   | Include map read fail    |
