@@ -1,5 +1,7 @@
 # Usage
 
+🇮🇹 [Versione italiana](it/usage.md)
+
 ## Running the Report
 
 1. Execute the report in SE38 or via transaction (**F8**)

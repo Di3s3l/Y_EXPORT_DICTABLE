@@ -1,5 +1,7 @@
 # TODO
 
+🇮🇹 [Versione italiana](it/TODO.md)
+
 ## High priority
 
 ### 1 — ALV Preview

@@ -1,5 +1,7 @@
 # Technical Notes
 
+🇮🇹 [Versione italiana](it/technical-notes.md)
+
 ## Requirements
 
 | Requirement | Detail |

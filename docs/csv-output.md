@@ -1,5 +1,7 @@
 # CSV Output Format
 
+🇮🇹 [Versione italiana](it/csv-output.md)
+
 ## Structure
 
 - Separator: **semicolon** (`;`)

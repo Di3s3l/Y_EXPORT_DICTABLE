@@ -1,5 +1,7 @@
 # Formato Output CSV
 
+🇬🇧 [English version](../csv-output.md)
+
 ## Struttura
 
 - Separatore: **punto e virgola** (`;`)

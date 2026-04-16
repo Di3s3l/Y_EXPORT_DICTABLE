@@ -1,5 +1,7 @@
 # Utilizzo
 
+🇬🇧 [English version](../usage.md)
+
 ## Esecuzione del Report
 
 1. Eseguire il report da SE38 o da transazione (**F8**)

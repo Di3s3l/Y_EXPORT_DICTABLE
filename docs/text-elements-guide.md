@@ -1,5 +1,7 @@
 # Y_EXPORT_DICTABLE — Text Elements Guide
 
+🇮🇹 [Versione italiana](it/text-elements-guide.md)
+
 Maintain in **SE38 → Goto → Text Elements** (or **SE32**).  
 After uploading the source to a new system, recreate all entries below before executing the report.
 

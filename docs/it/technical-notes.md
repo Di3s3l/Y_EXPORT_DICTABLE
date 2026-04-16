@@ -1,5 +1,7 @@
 # Note Tecniche
 
+🇬🇧 [English version](../technical-notes.md)
+
 ## Requisiti
 
 | Requisito | Dettaglio |

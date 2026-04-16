@@ -1,5 +1,7 @@
 # Installazione
 
+🇬🇧 [English version](../installation.md)
+
 ## Requisiti
 
 - Sistema SAP con release ABAP **7.40 o superiore**
