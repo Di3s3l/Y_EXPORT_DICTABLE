@@ -68,7 +68,7 @@ START-OF-SELECTION.
       AND as4local = 'A'.
 
   IF sy-subrc <> 0.
-    MESSAGE TEXT-m01 TYPE 'E'.
+    MESSAGE TEXT-m01 TYPE 'I'.
     RETURN.
   ENDIF.
 
@@ -88,7 +88,7 @@ START-OF-SELECTION.
       OTHERS         = 3.
 
   IF sy-subrc <> 0.
-    MESSAGE TEXT-m02 TYPE 'E'.
+    MESSAGE TEXT-m02 TYPE 'I'.
     RETURN.
   ENDIF.
 
@@ -110,7 +110,7 @@ START-OF-SELECTION.
       OTHERS        = 2.
 
   IF sy-subrc <> 0.
-    MESSAGE TEXT-m03 TYPE 'W'.
+    MESSAGE TEXT-m03 TYPE 'I'.
   ENDIF.
 
   DATA(lv_active_include) = CONV tabname( '' ).
@@ -198,7 +198,7 @@ START-OF-SELECTION.
       OTHERS                  = 4.
 
   IF sy-subrc = 0.
-    MESSAGE TEXT-m04 TYPE 'S'.
+    MESSAGE TEXT-m04 TYPE 'I'.
   ELSE.
-    MESSAGE TEXT-m05 TYPE 'E'.
+    MESSAGE TEXT-m05 TYPE 'I'.
   ENDIF.

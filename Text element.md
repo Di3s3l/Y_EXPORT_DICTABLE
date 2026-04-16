@@ -36,11 +36,11 @@ If a symbol is blank or not maintained, that column header falls back to `NONAME
 
 | Symbol | Type    | Value |
 |--------|---------|-------|
-| `M01`  | Error   | `Table not found or not active.` |
-| `M02`  | Error   | `Cannot read table field structure.` |
-| `M03`  | Warning | `Cannot read include structure map.` |
-| `M04`  | Success | `Export completed successfully.` |
-| `M05`  | Error   | `File download failed.` |
+| `M01`  | Popup   | `Table not found or not active.` |
+| `M02`  | Popup   | `Cannot read table field structure.` |
+| `M03`  | Popup   | `Cannot read include structure map.` |
+| `M04`  | Popup   | `Export completed successfully.` |
+| `M05`  | Popup   | `File download failed.` |
 
 ---
 
