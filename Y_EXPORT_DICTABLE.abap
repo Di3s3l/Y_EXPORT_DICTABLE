@@ -38,11 +38,42 @@ SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
 SELECTION-SCREEN END OF BLOCK b1.
 
 *----------------------------------------------------------------------*
-* Default output path: TEXT-D01 (path) concatenated with TEXT-D02 (filename).
-* Split into two symbols so path and filename can be maintained independently.
+* INITIALIZATION: build default output path from TEXT-D01 (path) and
+* TEXT-D02 (filename). Strip redundant backslashes at the boundary and
+* rejoin with exactly one backslash.
 *----------------------------------------------------------------------*
 INITIALIZATION.
-  p_file = TEXT-d01 && TEXT-d02.
+  DATA(lv_path) = CONV string( TEXT-d01 ).
+  DATA(lv_file) = CONV string( TEXT-d02 ).
+  CONDENSE lv_path. CONDENSE lv_file.
+
+  " Strip trailing backslashes from path.
+  DATA lv_len TYPE i.
+  DATA lv_off TYPE i.
+  DO.
+    lv_len = strlen( lv_path ).
+    lv_off = lv_len - 1.
+    IF lv_len > 0 AND lv_path+lv_off(1) = '\'.
+      lv_path = lv_path(lv_off).
+    ELSE.
+      EXIT.
+    ENDIF.
+  ENDDO.
+
+  " Strip leading backslashes from filename.
+  DO.
+    IF strlen( lv_file ) > 0 AND lv_file(1) = '\'.
+      lv_file = lv_file+1.
+    ELSE.
+      EXIT.
+    ENDIF.
+  ENDDO.
+
+  IF lv_path IS INITIAL.
+    p_file = lv_file.
+  ELSE.
+    p_file = lv_path && '\' && lv_file.
+  ENDIF.
 
 *----------------------------------------------------------------------*
 * F4 help for output file path
