@@ -43,6 +43,7 @@ Se un simbolo è vuoto o non mantenuto, l'intestazione di quella colonna viene s
 | `M03`   | 100       | `Cannot read include structure map.` |
 | `M04`   | 100       | `Export completed successfully.` |
 | `M05`   | 100       | `File download failed.` |
+| `M06`   | 100       | `Insufficient authorization to read DDIC object.` |
 
 ---
 
@@ -66,6 +67,7 @@ Se un simbolo è vuoto o non mantenuto, l'intestazione di quella colonna viene s
 | `TEXT-D01` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02` | Percorso output predefinito |
 | `TEXT-D02` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02` | Nome file output predefinito |
 | `TEXT-H01`–`H07` | Assemblaggio header CSV | Un'etichetta per colonna |
+| `TEXT-M06` | `AUTHORITY-CHECK ... MESSAGE TEXT-m06 TYPE 'I'` | Autorizzazione DDIC mancante |
 | `TEXT-M01` | `MESSAGE TEXT-m01 TYPE 'I'` | Tabella non trovata |
 | `TEXT-M02` | `MESSAGE TEXT-m02 TYPE 'I'` | Errore lettura metadati campo |
 | `TEXT-M03` | `MESSAGE TEXT-m03 TYPE 'I'` | Errore lettura mappa include |

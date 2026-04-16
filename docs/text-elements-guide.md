@@ -43,6 +43,7 @@ If a symbol is blank or not maintained, that column header falls back to `NONAME
 | `M03`  | 100     | `Cannot read include structure map.` |
 | `M04`  | 100     | `Export completed successfully.` |
 | `M05`  | 100     | `File download failed.` |
+| `M06`  | 100     | `Insufficient authorization to read DDIC object.` |
 
 ---
 
@@ -66,6 +67,7 @@ If a symbol is blank or not maintained, that column header falls back to `NONAME
 | `TEXT-D01` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02` | Default output path |
 | `TEXT-D02` | `INITIALIZATION: p_file = TEXT-d01 && TEXT-d02` | Default output filename |
 | `TEXT-H01`–`H07` | CSV header assembly | One label per column |
+| `TEXT-M06` | `AUTHORITY-CHECK ... MESSAGE TEXT-m06 TYPE 'I'` | No DDIC authorization |
 | `TEXT-M01` | `MESSAGE TEXT-m01 TYPE 'I'` | Table not found |
 | `TEXT-M02` | `MESSAGE TEXT-m02 TYPE 'I'` | Field metadata read fail |
 | `TEXT-M03` | `MESSAGE TEXT-m03 TYPE 'I'` | Include map read fail |

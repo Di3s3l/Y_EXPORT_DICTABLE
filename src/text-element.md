@@ -19,6 +19,7 @@
 | `M03`  | 100     | `Cannot read include structure map.` |
 | `M04`  | 100     | `Export completed successfully.` |
 | `M05`  | 100     | `File download failed.` |
+| `M06`  | 100     | `Insufficient authorization to read DDIC object.` |
 
 **Selection Texts** — *SE38 → Goto → Text Elements → Selection Texts*
 

@@ -91,6 +91,19 @@ AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_file.
 *----------------------------------------------------------------------*
 START-OF-SELECTION.
 
+  " Check authorization to read DDIC objects (S_DEVELOP, object type TABL).
+  " TEXT-M06: error shown when user lacks DDIC read authorization.
+  AUTHORITY-CHECK OBJECT 'S_DEVELOP'
+    ID 'OBJTYPE' FIELD 'TABL'
+    ID 'OBJNAME' FIELD p_tab
+    ID 'P_GROUP' DUMMY
+    ID 'ACTVT'   FIELD '03'.
+
+  IF sy-subrc <> 0.
+    MESSAGE TEXT-m06 TYPE 'I'.
+    RETURN.
+  ENDIF.
+
   " Validate: table must exist and be in active state (AS4LOCAL = 'A').
   " TEXT-M01: error shown when table is not found or not active.
   SELECT SINGLE @abap_true
