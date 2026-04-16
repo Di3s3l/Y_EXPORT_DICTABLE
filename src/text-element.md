@@ -2,11 +2,11 @@
 
 | Symbol | Max Len | Value |
 |--------|---------|-------|
-| `001`  | 40      | `Export DDIC Table Structure` |
+| `001`  | 30      | `Export DDIC Table Structure` |
 | `S01`  | 100     | `Exports the DDIC structure of a table to a semicolon-separated CSV file.` |
 | `S02`  | 100     | `Separator: semicolon (;)   Encoding: UTF-8 with BOM` |
-| `D01`  | 100     | `C:\TEMP\` |
-| `D02`  | 50      | `export.csv` |
+| `D01`  | 20      | `C:\TMP` |
+| `D02`  | 20      | `export.csv` |
 | `H01`  | 30      | `FIELD_NAME` |
 | `H02`  | 30      | `DATA_ELEMENT` |
 | `H03`  | 30      | `DDIC_TYPE` |

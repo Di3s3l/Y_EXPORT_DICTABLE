@@ -14,11 +14,11 @@ I valori di riferimento sono in [`src/text-element.md`](../../src/text-element.m
 
 | Simbolo | Lung. max | Valore |
 |---------|-----------|--------|
-| `001`   | 40        | `Export DDIC Table Structure` |
+| `001`   | 30        | `Export DDIC Table Structure` |
 | `S01`   | 100       | `Exports the DDIC structure of a table to a semicolon-separated CSV file.` |
 | `S02`   | 100       | `Separator: semicolon (;)   Encoding: UTF-8 with BOM` |
-| `D01`   | 100       | `C:\TEMP\` |
-| `D02`   | 50        | `export.csv` |
+| `D01`   | 20        | `C:\TMP` |
+| `D02`   | 20        | `export.csv` |
 
 ### Intestazioni colonne CSV (un simbolo per colonna)
 
