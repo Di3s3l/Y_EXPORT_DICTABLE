@@ -85,6 +85,6 @@ Full reference in [`Y_EXPORT_DICTABLE_TXT_ELEMENT.md`](Y_EXPORT_DICTABLE_TXT_ELE
 
 ## License & Copyright
 
-Copyright © 2025 [Di3s3l](https://enz.ovh)
+Copyright © 2025 <a href="https://enz.ovh" target="_blank">Di3s3l</a>
 
 Personal use and internal corporate use permitted. Redistribution or publication of modified versions requires attribution to the original author.
