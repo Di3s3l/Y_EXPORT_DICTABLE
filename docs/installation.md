@@ -14,7 +14,7 @@
    - Package: **$TMP** (local, non-transportable — no Basis involvement, no transport request)
 3. Upload source: **Utilities → Upload/Download → Upload** → select `src/Y_EXPORT_DICTABLE.abap`
 4. Activate: **Ctrl+F3**
-5. Maintain text elements: **SE38 → Goto → Text Elements** — see [Text Elements](text-elements.md)
+5. Maintain text elements: **SE38 → Goto → Text Elements** — see [Text Elements](text-elements-guide.md)
 
 > Text elements are **not** embedded in the `.abap` source file. They must be recreated manually in each target system after upload.
 
