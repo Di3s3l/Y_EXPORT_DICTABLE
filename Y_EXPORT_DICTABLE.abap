@@ -1,5 +1,5 @@
 *&---------------------------------------------------------------------*
-*& Report Y_EXPORT_DICTABLE
+*& Report Y_EXPORT_DICTABLE                                   v1.0
 *& Exports the field structure of a DDIC table to a CSV file (frontend).
 *& Separator: semicolon (;). Columns: field name, data element, DDIC
 *& type, length, decimals, description, source include.
