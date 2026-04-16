@@ -1,8 +1,8 @@
 # TODO
 
-## Alta priorità
+## High priority
 
-### 8 — ALV Preview
+### 1 — ALV Preview
 Show the table structure in an ALV grid before downloading the CSV.
 The user can review the output, deselect rows, or cancel without writing to disk.
 
@@ -12,7 +12,7 @@ The user can review the output, deselect rows, or cancel without writing to disk
 
 ---
 
-### 1 — Field Filter
+### 2 — Field Filter
 Allow the user to exclude fields by name pattern or DDIC type from the selection screen.
 
 - Add optional parameter `P_EXCL` (e.g. `MANDT,*_DATE`) — comma-separated list of field name patterns
@@ -21,9 +21,9 @@ Allow the user to exclude fields by name pattern or DDIC type from the selection
 
 ---
 
-## Media priorità
+## Medium priority
 
-### 2 — Multi-table Export
+### 3 — Multi-table Export
 Accept a list of tables instead of a single one and export all in one run.
 
 - Replace `p_tab` with a SELECT-OPTIONS range `s_tab`
@@ -43,8 +43,8 @@ Replace the hardcoded semicolon with a text element or parameter.
 
 ---
 
-## Note
+## Notes
 
 - Items are independent — each can be implemented without the others
-- ALV preview (8) and field filter (1) share no dependencies with multi-table (2) or separator (4)
-- Multi-table (2) requires revisiting the `INITIALIZATION` path default filename logic
+- ALV preview (1) and field filter (2) share no dependencies with multi-table (3) or separator (4)
+- Multi-table (3) requires revisiting the `INITIALIZATION` path default filename logic
