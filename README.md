@@ -37,6 +37,6 @@ SAP ABAP report that exports the field structure of any transparent DDIC table t
 
 ## License & Copyright
 
-Copyright © 2025 <a href="https://enz.ovh" target="_blank">Di3s3l</a>
+Copyright © 2026 <a href="https://enz.ovh" target="_blank">Di3s3l</a>
 
 Personal use and internal corporate use permitted. Redistribution or publication of modified versions requires attribution to the original author.
