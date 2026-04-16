@@ -18,7 +18,8 @@ DATA: lt_csv_data TYPE TABLE OF string,
       lv_line     TYPE string,
       lv_descr    TYPE string,         " local copy to avoid side effects on work area
       lt_incl_map TYPE HASHED TABLE OF ty_incl_map
-                    WITH UNIQUE KEY fieldname. " fieldname → include lookup
+                    WITH UNIQUE KEY fieldname, " fieldname → include lookup
+      lt_dd03p    TYPE TABLE OF dd03p.         " raw field list including .INCLUDE marker rows
 
 " Info-box: two comment lines displayed above the input block.
 " TEXT-S01 / TEXT-S02 must be set in SE32 (Text symbols tab).
@@ -92,9 +93,9 @@ START-OF-SELECTION.
 
   " Validate: table must exist and be in active state (AS4LOCAL = 'A').
   " TEXT-M01: error shown when table is not found or not active.
-  SELECT SINGLE tabname
+  SELECT SINGLE @abap_true
     FROM dd02l
-    INTO @DATA(lv_check)
+    INTO @DATA(lv_exists)
     WHERE tabname = @p_tab
       AND as4local = 'A'.
 
@@ -128,8 +129,6 @@ START-OF-SELECTION.
   " The include structure name is carried in PRECFIELD of DD03P_TAB returned by
   " DDIF_TABL_GET, which is the only reliable API source for this mapping.
   " TEXT-M03: warning shown when include structure cannot be read (non-blocking).
-  DATA lt_dd03p TYPE TABLE OF dd03p.
-
   CALL FUNCTION 'DDIF_TABL_GET'
     EXPORTING
       name          = p_tab
@@ -159,11 +158,13 @@ START-OF-SELECTION.
     ENDIF.
   ENDLOOP.
 
-  " Build CSV header from one symbol per column (H01–H07).
-  " TEXT-hxx are C-type fields; CONV string() + CONDENSE strips trailing spaces.
-  " COND result type must be string — without it the C(6) literal 'NONAME' would
-  " infer C(6) for the entire expression, silently truncating every column label.
-  " Any symbol not maintained in SE32 falls back to 'NONAME'.
+*----------------------------------------------------------------------*
+* CSV header: one text symbol per column (H01–H07).
+* TEXT-hxx are C-type fields; CONV string() + CONDENSE strips trailing
+* spaces. COND result type must be string — without it the C(6) literal
+* 'NONAME' infers C(6) for the whole expression, truncating every label.
+* Any symbol not maintained in SE32 falls back to 'NONAME'.
+*----------------------------------------------------------------------*
   DATA(lv_h01) = CONV string( TEXT-h01 ).
   DATA(lv_h02) = CONV string( TEXT-h02 ).
   DATA(lv_h03) = CONV string( TEXT-h03 ).

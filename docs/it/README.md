@@ -1,5 +1,7 @@
 # Documentazione
 
+🇬🇧 [English version](../README.md)
+
 | Documento | Descrizione |
 |-----------|-------------|
 | [Installazione](installation.md) | Requisiti, procedura di installazione, strategia pacchetto |
