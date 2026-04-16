@@ -20,7 +20,7 @@ Report SAP ABAP che esporta la struttura dei campi di qualsiasi tabella DDIC tra
 
 ## Documentazione
 
-La cartella [`docs/`](docs/README.it.md) contiene istruzioni di installazione, guida all'utilizzo, riferimento output CSV, guida text elements e note tecniche.
+La cartella [`docs/it/`](docs/it/README.md) contiene istruzioni di installazione, guida all'utilizzo, riferimento output CSV, guida text elements e note tecniche.
 
 ---
 

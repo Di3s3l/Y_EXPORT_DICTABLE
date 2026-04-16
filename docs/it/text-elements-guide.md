@@ -3,7 +3,7 @@
 Mantenere in **SE38 → Goto → Text Elements** (o **SE32**).  
 Dopo aver caricato il sorgente in un nuovo sistema, ricreare tutte le voci seguenti prima di eseguire il report.
 
-I valori di riferimento sono in [`src/text-element.md`](../src/text-element.md).
+I valori di riferimento sono in [`src/text-element.md`](../../src/text-element.md).
 
 ---
 
