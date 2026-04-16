@@ -33,7 +33,7 @@ SAP ABAP report that exports the field structure of any transparent DDIC table t
 2. Create program `Y_EXPORT_DICTABLE`, assign to package **$TMP** (local, no transport required)
 3. Upload source: **Utilities → Upload/Download → Upload**
 4. Activate: **Ctrl+F3**
-5. Maintain text elements in **SE38 → Goto → Text Elements** — see [`Y_EXPORT_DICTABLE_TXT_ELEMENT.md`](Y_EXPORT_DICTABLE_TXT_ELEMENT.md)
+5. Maintain text elements in **SE38 → Goto → Text Elements** — see [`Text element.md`](Text element.md)
 
 > Text elements are **not** embedded in the `.abap` source file. They must be recreated manually in each target system after upload.
 
@@ -63,7 +63,7 @@ SAP ABAP report that exports the field structure of any transparent DDIC table t
 
 ## Text Elements
 
-Full reference in [`Y_EXPORT_DICTABLE_TXT_ELEMENT.md`](Y_EXPORT_DICTABLE_TXT_ELEMENT.md).
+Full reference in [`Text element.md`](Text element.md).
 
 | Symbol | Purpose |
 |--------|---------|
@@ -79,7 +79,7 @@ Full reference in [`Y_EXPORT_DICTABLE_TXT_ELEMENT.md`](Y_EXPORT_DICTABLE_TXT_ELE
 | File | Description |
 |------|-------------|
 | `Y_EXPORT_DICTABLE.abap` | ABAP source |
-| `Y_EXPORT_DICTABLE_TXT_ELEMENT.md` | Text elements reference |
+| `Text element.md` | Text elements reference |
 
 ---
 
