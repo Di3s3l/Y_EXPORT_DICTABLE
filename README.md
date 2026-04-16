@@ -1,5 +1,7 @@
 # Y_EXPORT_DICTABLE
 
+<img src="assets/sap-s4hana-logo.png" alt="SAP S/4HANA" width="200"/>
+
 SAP ABAP report that exports the field structure of any transparent DDIC table to a UTF-8 semicolon-delimited CSV file on the frontend workstation.
 
 ---
