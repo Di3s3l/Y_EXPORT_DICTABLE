@@ -1,6 +1,6 @@
 # Documentazione
 
-🇬🇧 [English version](../README.md)
+← [Y_EXPORT_DICTABLE](../../README.it.md) | 🇬🇧 [English version](../README.md)
 
 | Documento | Descrizione |
 |-----------|-------------|

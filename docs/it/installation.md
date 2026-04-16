@@ -1,6 +1,6 @@
 # Installazione
 
-🇬🇧 [English version](../installation.md)
+← [Documentazione](README.md) | 🇬🇧 [English version](../installation.md)
 
 ## Requisiti
 

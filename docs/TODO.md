@@ -1,6 +1,6 @@
 # TODO
 
-🇮🇹 [Versione italiana](it/TODO.md)
+← [Documentation](README.md) | 🇮🇹 [Versione italiana](it/TODO.md)
 
 ## High priority
 

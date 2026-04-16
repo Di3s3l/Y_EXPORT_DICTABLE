@@ -1,6 +1,6 @@
 # Technical Notes
 
-🇮🇹 [Versione italiana](it/technical-notes.md)
+← [Documentation](README.md) | 🇮🇹 [Versione italiana](it/technical-notes.md)
 
 ## Requirements
 

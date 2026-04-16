@@ -1,6 +1,6 @@
 # Y_EXPORT_DICTABLE — Guida Text Elements
 
-🇬🇧 [English version](../text-elements-guide.md)
+← [Documentazione](README.md) | 🇬🇧 [English version](../text-elements-guide.md)
 
 Mantenere in **SE38 → Goto → Text Elements** (o **SE32**).  
 Dopo aver caricato il sorgente in un nuovo sistema, ricreare tutte le voci seguenti prima di eseguire il report.

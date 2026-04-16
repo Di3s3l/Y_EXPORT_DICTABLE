@@ -1,6 +1,6 @@
 # Utilizzo
 
-🇬🇧 [English version](../usage.md)
+← [Documentazione](README.md) | 🇬🇧 [English version](../usage.md)
 
 ## Esecuzione del Report
 
